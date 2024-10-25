@@ -1,0 +1,229 @@
+* {
+	margin-bottom: unset;
+}
+
+#divChart {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+.hover-chart:hover {
+	cursor: pointer;
+}
+
+.hover-applications:hover {
+	cursor: pointer;
+	overflow: hidden;
+	background: white;
+	border-radius: 10px;
+}
+
+.animation-chart {
+	animation: loader-1-1 4.8s linear infinite;
+}
+
+.animations-Chart {
+	transform-origin: bottom;
+	animation: revealing-bars 4s linear infinite;
+}
+
+@keyframes loader-1-1 {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes revealing-bars {
+	0% {
+		transform: scaleY(0);
+	}
+
+	15% {
+		transform: scaleY(1);
+	}
+}
+
+.app {
+	background: rgba(255, 255, 255, 1);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	transition: 0.2s;
+}
+
+.app:hover {
+	cursor: pointer;
+	background: rgba(255, 255, 255, 0.85);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.app-1 {
+	background: linear-gradient(rgb(187, 103, 255) 0%, rgb(196, 132, 243) 100%);
+	box-shadow: rgb(224 198 245) 0px 10px 20px 0px;
+	opacity: 1;
+	color: white;
+}
+
+/* radial bar */
+.radialBar {
+	flex: 1 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 1rem;
+}
+
+.CircularProgressbar {
+	width: 4rem !important;
+	overflow: visible;
+}
+
+.CircularProgressbar-path {
+	stroke: #323C4D !important;
+	stroke-width: 12px !important;
+	filter: drop-shadow(2px 4px 6px #323C4D);
+}
+
+.CircularProgressbar-trail {
+	display: none;
+}
+
+.CircularProgressbar-text {
+	fill: #323C4D !important;
+}
+
+.radialBar>span {
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.CompactCard:hover {
+	box-shadow: none !important;
+}
+
+.CompactCard {
+	display: flex;
+	flex: 1;
+	border-radius: 0.7rem;
+	color: white;
+	padding: 1rem;
+	position: relative;
+	cursor: pointer;
+}
+
+.CompactCard:hover {
+	box-shadow: none !important;
+}
+
+.animation_loader {
+	animation: 0.1 loader;
+}
+
+@keyframes loader {}
+
+.hover-chart:hover {
+	cursor: pointer;
+}
+
+.hover-applications:hover {
+	cursor: pointer;
+	overflow: hidden;
+	background: white;
+	border-radius: 10px;
+}
+
+.animation-chart {
+	animation: loader-1-1 4.8s linear infinite;
+}
+
+.animations-Chart {
+	transform-origin: bottom;
+	animation: revealing-bars 4s linear infinite;
+}
+
+.app {
+	background: rgba(255, 255, 255, 1);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	transition: 0.2s;
+}
+
+.app:hover {
+	cursor: pointer;
+	background: rgba(255, 255, 255, 0.85);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.app-1 {
+	background: linear-gradient(rgb(187, 103, 255) 0%, rgb(196, 132, 243) 100%);
+	box-shadow: rgb(224 198 245) 0px 10px 20px 0px;
+	opacity: 1;
+	color: white;
+}
+
+/* radial bar */
+.radialBar {
+	flex: 1 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 1rem;
+}
+
+.CircularProgressbar {
+	width: 4rem !important;
+	overflow: visible;
+}
+
+.CircularProgressbar-path {
+	stroke: #323C4D !important;
+	stroke-width: 12px !important;
+	filter: drop-shadow(2px 4px 6px #323C4D);
+}
+
+.CircularProgressbar-trail {
+	display: none;
+}
+
+.CircularProgressbar-text {
+	fill: white !important;
+}
+
+.radialBar>span {
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.CompactCard:hover {
+	box-shadow: none !important;
+}
+
+.CompactCard {
+	display: flex;
+	flex: 1;
+	border-radius: 0.7rem;
+	color: white;
+	padding: 1rem;
+	position: relative;
+	cursor: pointer;
+}
+
+.CompactCard:hover {
+	box-shadow: none !important;
+}
+
+.animation_loader {
+	animation: 0.1 loader;
+}
+
+@keyframes loader {}

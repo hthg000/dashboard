@@ -1,0 +1,278 @@
+<main class="px-10 py-3 w-full h-full">
+	<section
+		style="display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: 1fr; grid-column-gap: 20px">
+		<!-- div1 -->
+		<div class="w-full h-[145px]">
+			<div class="CompactCard" style="background: #fff; opacity: 1">
+				<div class="radialBar">
+					<svg class="CircularProgressbar animation-chart" viewBox="0 0 100 100"
+						data-test-id="CircularProgressbar" fill="#323C4D">
+						<path class="CircularProgressbar-path relative" d="
+    M 50,50
+    m 0,-46
+    a 46,46 0 1 1 0,92
+    a 46,46 0 1 1 0,-92
+  " fill="#323C4D" stroke-width="8" fill-opacity="0"
+							style="stroke-dasharray: 289.027px, 289.027px; stroke-dashoffset: 86.708px"></path>
+					</svg>
+					<span class="CircularProgressbar-text text-[#323C4D] absolute top-[27%] left-[11%]" x="50"
+						y="50">70%</span>
+					<span class="text-[#323C4D]">Confirmed</span>
+				</div>
+
+				<div class="flex flex-col text-end justify-between">
+					<div class="flex justify-end">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+							fill="#323C4D">
+							<path
+								d="M11,9h4a1,1,0,0,0,0-2H13V6a1,1,0,0,0-2,0V7a3,3,0,0,0,0,6h2a1,1,0,0,1,0,2H9a1,1,0,0,0,0,2h2v1a1,1,0,0,0,2,0V17a3,3,0,0,0,0-6H11a1,1,0,0,1,0-2Zm8-7H5A3,3,0,0,0,2,5V19a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V5A3,3,0,0,0,19,2Zm1,17a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V5A1,1,0,0,1,5,4H19a1,1,0,0,1,1,1Z">
+							</path>
+						</svg>
+					</div>
+					<span class="text-[#323C4D]">{{ dataReport[0]?.confirmed }}</span><span class="text-[#323C4D]">Last
+						24 hours</span>
+				</div>
+			</div>
+		</div>
+		<!-- div2 -->
+		<div class="w-full h-[145px]">
+			<div class="CompactCard" data-projection-id="4"
+				style="background: #fff; transform: none; transform-origin: 50% 50% 0px">
+				<div class="radialBar">
+					<svg class="CircularProgressbar animation-chart" viewBox="0 0 100 100"
+						data-test-id="CircularProgressbar">
+						<path class="CircularProgressbar-path relative" d="
+      M 50,50
+      m 0,-46
+      a 46,46 0 1 1 0,92
+      a 46,46 0 1 1 0,-92
+    " stroke-width="8" fill-opacity="0" style="stroke-dasharray: 289.027px, 289.027px; stroke-dashoffset: 57.8053px">
+						</path>
+					</svg>
+					<span class="CircularProgressbar-text absolute top-[27%] left-[11%] text-[#323C4D]" x="50"
+						y="50">80%</span>
+
+					<span class="text-[#323C4D]">Deaths</span>
+				</div>
+				<div class="flex flex-col text-end justify-between">
+					<div class="flex justify-end">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+							fill="#323C4D">
+							<path
+								d="M22,2H2A1,1,0,0,0,1,3v8a1,1,0,0,0,1,1H5v9a1,1,0,0,0,1,1H18a1,1,0,0,0,1-1V12h3a1,1,0,0,0,1-1V3A1,1,0,0,0,22,2ZM7,20V18a2,2,0,0,1,2,2Zm10,0H15a2,2,0,0,1,2-2Zm0-4a4,4,0,0,0-4,4H11a4,4,0,0,0-4-4V8H17Zm4-6H19V7a1,1,0,0,0-1-1H6A1,1,0,0,0,5,7v3H3V4H21Zm-9,5a3,3,0,1,0-3-3A3,3,0,0,0,12,15Zm0-4a1,1,0,1,1-1,1A1,1,0,0,1,12,11Z">
+							</path>
+						</svg>
+					</div>
+					<span class="text-[#323C4D]">{{ dataReport[0]?.deaths }}</span><span class="text-[#323C4D]">Last 24
+						hours</span>
+				</div>
+			</div>
+		</div>
+		<!-- div3 -->
+		<div class="w-full h-[145px]">
+			<div class="CompactCard" style="background: #fff; opacity: 1">
+				<div class="radialBar">
+					<svg class="CircularProgressbar animation-chart" viewBox="0 0 100 100"
+						data-test-id="CircularProgressbar">
+						<path class="CircularProgressbar-path relative" d="
+      M 50,50
+      m 0,-46
+      a 46,46 0 1 1 0,92
+      a 46,46 0 1 1 0,-92
+    " stroke-width="8" fill-opacity="0" style="stroke-dasharray: 289.027px, 289.027px; stroke-dashoffset: 115.611px">
+						</path>
+					</svg>
+
+					<span class="CircularProgressbar-text absolute top-[27%] left-[11%] text-[#323C4D]" x="50"
+						y="50">60%</span>
+					<span class="text-[#323C4D]">Recovered</span>
+				</div>
+
+				<div class="flex flex-col text-end justify-between">
+					<div class="flex justify-end">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+							fill="#323C4D">
+							<path
+								d="M15,14H9a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2Zm0-4H11a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Zm2-6H15.82A3,3,0,0,0,13,2H11A3,3,0,0,0,8.18,4H7A3,3,0,0,0,4,7V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V7A3,3,0,0,0,17,4ZM10,5a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1V6H10Zm8,14a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V7A1,1,0,0,1,7,6H8V7A1,1,0,0,0,9,8h6a1,1,0,0,0,1-1V6h1a1,1,0,0,1,1,1Z">
+							</path>
+						</svg>
+					</div>
+					<span class="text-[#323C4D]">{{ dataReport[0]?.recovered }}</span><span class="text-[#323C4D]">Last
+						24 hours</span>
+				</div>
+			</div>
+		</div>
+		<!-- div4 -->
+		<div class="w-full h-[145px]">
+			<div class="CompactCard" style="background: #fff; opacity: 1">
+				<div class="radialBar">
+					<svg class="CircularProgressbar animation-chart" viewBox="0 0 100 100"
+						data-test-id="CircularProgressbar">
+						<path class="CircularProgressbar-path relative" d="
+      M 50,50
+      m 0,-46
+      a 46,46 0 1 1 0,92
+      a 46,46 0 1 1 0,-92
+    " stroke-width="8" fill-opacity="0" style="stroke-dasharray: 289.027px, 289.027px; stroke-dashoffset: 115.611px">
+						</path>
+					</svg>
+					<span class="CircularProgressbar-text absolute top-[27%] left-[11%] text-[#323C4D]" x="50"
+						y="50">60%</span>
+
+					<span class="text-[#323C4D]">Expenses</span>
+				</div>
+				<div class="flex flex-col text-end justify-between items-center">
+					<div class="flex justify-end">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+							fill="#323C4D">
+							<path
+								d="M15,14H9a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2Zm0-4H11a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Zm2-6H15.82A3,3,0,0,0,13,2H11A3,3,0,0,0,8.18,4H7A3,3,0,0,0,4,7V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V7A3,3,0,0,0,17,4ZM10,5a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1V6H10Zm8,14a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V7A1,1,0,0,1,7,6H8V7A1,1,0,0,0,9,8h6a1,1,0,0,0,1-1V6h1a1,1,0,0,1,1,1Z">
+							</path>
+						</svg>
+					</div>
+					<span class="text-[#323C4D]">$4,270</span><span class="text-[#323C4D]">Last 24 hours</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="mt-4"
+		style="display: grid; grid-template-columns: 2fr 2fr; grid-template-rows: 1fr; grid-column-gap: 20px">
+		<!-- colum 1 -->
+		<div
+			class="w-full h-full rounded-[8px] p-[24px] flex flex-col round-[8px] px-[24px] pt-[24px] pb-[32px] hover-chart duration-2000 bg-[#fff]">
+			<div class="flex h-full flex-col">
+				<div class="flex w-full justify-between">
+					<div>
+						<div class="flex justify-between items-center w-full">
+							<h3 class="text-inter text-[14px] leading-[20px] text-[#606C80] font-bold">
+								Usage Yesterday, 24 June
+							</h3>
+						</div>
+						<div>
+							<h3 class="text-inter text-[24px] leading-[32px] text-[#323C4D] font-bold mb-[unset]">
+								7 h 34 min
+							</h3>
+						</div>
+					</div>
+
+					<div class="flex justify-center">
+						<!-- Regions -->
+						<mat-form-field class="bg-[unset] w-[140px] scale-90">
+							<mat-label>All Regions</mat-label>
+							<mat-select [value]="selectedRegions" (valueChange)="onRegionsChange($event)">
+								@for (item of regions; track item) {
+								<mat-option [value]="item.iso">{{ item.name }}</mat-option>
+								}
+							</mat-select>
+						</mat-form-field>
+
+						<mat-form-field class="bg-[unset] w-[140px] scale-90">
+							<mat-label>All Provinces</mat-label>
+							<mat-select [value]="selectedprovince" (valueChange)="onProvinceChange($event)">
+								@for (item of provinces; track item) {
+								<mat-option [value]="item">{{ item.province }}</mat-option>
+								}
+							</mat-select>
+						</mat-form-field>
+
+						<mat-form-field class="bg-[unset] w-[140px] scale-90">
+							<mat-label>Year</mat-label>
+							<mat-select [value]="selectedYear" (valueChange)="onYearChange($event)">
+								@for (food of years; track food) {
+								<mat-option [value]="food">{{ food }}</mat-option>
+								}
+							</mat-select>
+						</mat-form-field>
+					</div>
+				</div>
+
+				<div class="flex flex-col h-full flex-1 justify-between">
+					<div id="divChart" class="p-[15px]">
+						<mat-card>
+							<div id="ChartDiv" style="width: 500px; height: 400px"></div>
+						</mat-card>
+						<!-- <canvas id="barChart" height="210px"></canvas> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- colum 3 -->
+		<div style="display: grid; grid-template-columns: 1fr; grid-template-rows: repeat(3, 1fr); grid-row-gap: 12px">
+			<!-- div8 -->
+			<div class="w-full h-full bg-[#F3E8FF] rounded-[8px] p-[24px] flex hover-chart duration-2000">
+				<div class="flex-1 justify-between h-full flex flex-col">
+					<h3 class="text-inter text-[14px] leading-[20px] text-[#7E22CE] font-bold mb-[unset]">Confirmed</h3>
+					<h3 class="text-inter text-[14px] leading-[20px] text-[#7E22CE] font-bold mb-[unset]">+5%</h3>
+					<h3 class="text-inter text-[20px] leading-[28px] text-[#7E22CE] font-bold mb-[unset]">1h 21 min</h3>
+				</div>
+				<div class="h-full flex items-end animations-Chart">
+					<svg width="87" height="84" viewBox="0 0 87 84" fill="none" id="chart_05">
+						<rect y="47" width="3" height="37" rx="1.5" fill="#A855F7" />
+						<rect x="7" y="28" width="3" height="56" rx="1.5" fill="#A855F7" />
+						<rect x="14" y="45" width="3" height="39" rx="1.5" fill="#A855F7" />
+						<rect x="21" y="28" width="3" height="56" rx="1.5" fill="#A855F7" />
+						<rect x="28" y="35" width="3" height="49" rx="1.5" fill="#A855F7" />
+						<rect x="35" y="5" width="3" height="79" rx="1.5" fill="#A855F7" />
+						<rect x="42" y="19" width="3" height="65" rx="1.5" fill="#A855F7" />
+						<rect x="49" y="35" width="3" height="49" rx="1.5" fill="#A855F7" />
+						<rect x="56" width="3" height="84" rx="1.5" fill="#A855F7" />
+						<rect x="63" y="15" width="3" height="69" rx="1.5" fill="#A855F7" />
+						<rect x="70" y="23" width="3" height="61" rx="1.5" fill="#DAB2FF" />
+						<rect x="77" y="32" width="3" height="52" rx="1.5" fill="#A855F7" />
+						<rect x="84" y="45" width="3" height="39" rx="1.5" fill="#A855F7" />
+					</svg>
+				</div>
+			</div>
+			<!-- div9 -->
+			<div class="w-full h-full bg-[#DCFCE7] rounded-[8px] p-[24px] flex hover-chart duration-2000">
+				<div class="flex-1 justify-between h-full flex flex-col">
+					<h3 class="text-inter text-[14px] leading-[20px] text-[#16A34A] font-bold mb-[unset]">Deaths</h3>
+					<h3 class="text-inter text-[14px] leading-[20px] text-[#16A34A] font-bold mb-[unset]">+5%</h3>
+					<h3 class="text-inter text-[20px] leading-[28px] text-[#16A34A] font-bold mb-[unset]">1h 21 min</h3>
+				</div>
+				<div class="h-full flex items-end animations-Chart">
+					<svg width="87" height="95" viewBox="0 0 87 95" fill="none" id="chart_06">
+						<rect y="9" width="3" height="86" rx="1.5" fill="#73FFA7" />
+						<rect x="7" y="53" width="3" height="42" rx="1.5" fill="#22C55E" />
+						<rect x="14" y="37" width="3" height="58" rx="1.5" fill="#22C55E" />
+						<rect x="21" y="71" width="3" height="24" rx="1.5" fill="#22C55E" />
+						<rect x="28" y="32" width="3" height="63" rx="1.5" fill="#22C55E" />
+						<rect x="35" y="46" width="3" height="49" rx="1.5" fill="#22C55E" />
+						<rect x="42" y="14" width="3" height="81" rx="1.5" fill="#22C55E" />
+						<rect x="49" y="5" width="3" height="90" rx="1.5" fill="#22C55E" />
+						<rect x="56" y="58" width="3" height="37" rx="1.5" fill="#22C55E" />
+						<rect x="63" y="26" width="3" height="69" rx="1.5" fill="#22C55E" />
+						<rect x="70" y="68" width="3" height="27" rx="1.5" fill="#22C55E" />
+						<rect x="77" width="3" height="95" rx="1.5" fill="#22C55E" />
+						<rect x="84" y="56" width="3" height="39" rx="1.5" fill="#22C55E" />
+					</svg>
+				</div>
+			</div>
+			<!-- div10 -->
+			<div class="w-full h-full bg-[#BFEBFF] rounded-[8px] p-[24px] flex hover-chart duration-2000">
+				<div class="flex-1 justify-between h-full flex flex-col">
+					<h3 class="text-inter text-[14px] leading-[20px] text-[#008CCC] font-bold mb-[unset]">Recovered</h3>
+					<h3 class="text-inter text-[14px] leading-[20px] text-[#008CCC] font-bold mb-[unset]">+5%</h3>
+					<h3 class="text-inter text-[20px] leading-[28px] text-[#008CCC] font-bold mb-[unset]">1h 21 min</h3>
+				</div>
+				<div class="h-full flex items-end animations-Chart">
+					<svg width="87" height="84" viewBox="0 0 87 84" fill="none" id="chart_04">
+						<rect y="31" width="3" height="53" rx="1.5" fill="#33BFFF" />
+						<rect x="7" y="30" width="3" height="54" rx="1.5" fill="#33BFFF" />
+						<rect x="14" y="16" width="3" height="68" rx="1.5" fill="#33BFFF" />
+						<rect x="21" y="29" width="3" height="55" rx="1.5" fill="#33BFFF" />
+						<rect x="28" y="13" width="3" height="71" rx="1.5" fill="#33BFFF" />
+						<rect x="35" y="19" width="3" height="65" rx="1.5" fill="#33BFFF" />
+						<rect x="42" y="26" width="3" height="58" rx="1.5" fill="#4E30A2" />
+						<rect x="49" y="39" width="3" height="45" rx="1.5" fill="#33BFFF" />
+						<rect x="56" y="14" width="3" height="70" rx="1.5" fill="#33BFFF" />
+						<rect x="63" width="3" height="84" rx="1.5" fill="#33BFFF" />
+						<rect x="70" y="26" width="3" height="58" rx="1.5" fill="#33BFFF" />
+						<rect x="77" y="33" width="3" height="51" rx="1.5" fill="#33BFFF" />
+						<rect x="84" y="6" width="3" height="78" rx="1.5" fill="#33BFFF" />
+					</svg>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
